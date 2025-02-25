@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Script Loading Differences</title>
+  </head>
+  <body>
+    <h1>📌 Understanding the Differences in Script Loading</h1>
+
+    <strong>Understand the differences:</strong>
+    <ul>
+      <li>
+        <strong>Script in <code>&lt;head&gt;</code>:</strong> Blocks HTML
+        parsing until the script is executed.
+      </li>
+      <li>
+        <strong>Script at end of <code>&lt;body&gt;</code>:</strong> Executes
+        after HTML parsing is complete.
+      </li>
+      <li>
+        <strong><code>async</code>:</strong> Downloads and executes the script
+        asynchronously, without blocking HTML parsing.
+      </li>
+      <li>
+        <strong><code>defer</code>:</strong> Downloads the script asynchronously
+        but executes it only after HTML parsing is complete.
+      </li>
+    </ul>
+  </body>
+</html>

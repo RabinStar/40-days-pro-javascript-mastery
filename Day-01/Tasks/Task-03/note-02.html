@@ -1,0 +1,129 @@
+<h2>✅ Task 3: Experiment with Different JavaScript Loading Methods</h2>
+<ol>
+  <li>
+    <strong>Add the script in <code>&lt;head&gt;</code>:</strong>
+    <ul>
+      <li>
+        Placing the script in the <code>&lt;head&gt;</code> blocks HTML parsing
+        until the script is downloaded and executed.
+      </li>
+    </ul>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Script in Head&lt;/title&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, JavaScript!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+  </li>
+  <li>
+    <strong
+      >Add the script at the end of the <code>&lt;body&gt;</code> tag:</strong
+    >
+    <ul>
+      <li>
+        Placing the script at the end of the <code>&lt;body&gt;</code> ensures
+        the HTML is fully parsed before the script is executed.
+      </li>
+    </ul>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Script at End of Body&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, JavaScript!&lt;/h1&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+  </li>
+  <li>
+    <strong>Use the <code>async</code> attribute:</strong>
+    <ul>
+      <li>
+        The <code>async</code> attribute allows the script to download
+        asynchronously without blocking HTML parsing. The script executes as
+        soon as it is downloaded, even if HTML parsing is incomplete.
+      </li>
+    </ul>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Async Script&lt;/title&gt;
+    &lt;script src="script.js" async&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, JavaScript!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+  </li>
+  <li>
+    <strong>Use the <code>defer</code> attribute:</strong>
+    <ul>
+      <li>
+        The <code>defer</code> attribute allows the script to download
+        asynchronously but executes only after HTML parsing is complete.
+      </li>
+    </ul>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Defer Script&lt;/title&gt;
+    &lt;script src="script.js" defer&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, JavaScript!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+  </li>
+  <li>
+    <strong>Understand the differences:</strong>
+    <ul>
+      <li>
+        <strong>Script in <code>&lt;head&gt;</code>:</strong> Blocks HTML
+        parsing until the script is executed.
+      </li>
+      <li>
+        <strong>Script at end of <code>&lt;body&gt;</code>:</strong> Executes
+        after HTML parsing is complete.
+      </li>
+      <li>
+        <strong><code>async</code>:</strong> Downloads and executes the script
+        asynchronously, without blocking HTML parsing.
+      </li>
+      <li>
+        <strong><code>defer</code>:</strong> Downloads the script asynchronously
+        but executes it only after HTML parsing is complete.
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h3>Steps to Test:</h3>
+<ol>
+  <li>
+    Create an HTML file for each method (e.g., <code>head.html</code>,
+    <code>body-end.html</code>, <code>async.html</code>,
+    <code>defer.html</code>).
+  </li>
+  <li>Add the corresponding script loading method to each file.</li>
+  <li>
+    Open each file in a browser and observe the behavior using the browser's
+    DevTools (Network and Console tabs).
+  </li>
+  <li>
+    Note the differences in script execution timing and its impact on page
+    rendering.
+  </li>
+</ol>

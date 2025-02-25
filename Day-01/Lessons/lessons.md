@@ -61,3 +61,5 @@
 - **Defer**: Loads the script after HTML parsing is complete.
     ```html
     <script defer src="deFerScript.js" ></script>
+
+**Happy Coding!!!**: By Al-Amin

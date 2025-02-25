@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-03</title>
+  </head>
+  <body>
+    <h2>✅ Task 3: Experiment with Different JavaScript Loading Methods</h2>
+    <ol>
+      <li>
+        <strong>Add the script in <code>&lt;head&gt;</code>:</strong>
+        <ul>
+          <li>
+            Placing the script in the <code>&lt;head&gt;</code> loads it before
+            the HTML content is rendered.
+          </li>
+          <li>
+            This can block the rendering of the page until the script is fully
+            loaded and executed.
+          </li>
+        </ul>
+        <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Script in Head&lt;/title&gt;
+            &lt;script&gt;
+                console.log("Script loaded in &lt;head&gt;");
+            &lt;/script&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Hello, JavaScript!&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+      </li>
+      <li>
+        <strong
+          >Add the script at the end of the
+          <code>&lt;body&gt;</code> tag:</strong
+        >
+        <ul>
+          <li>
+            Placing the script at the end of the
+            <code>&lt;body&gt;</code> ensures the HTML content is loaded first.
+          </li>
+          <li>
+            This improves page load performance as the script doesn't block
+            rendering.
+          </li>
+        </ul>
+        <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Script at End of Body&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Hello, JavaScript!&lt;/h1&gt;
+            &lt;script&gt;
+                console.log("Script loaded at end of &lt;body&gt;");
+            &lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+      </li>
+      <li>
+        <strong>Use the <code>async</code> attribute:</strong>
+        <ul>
+          <li>
+            The <code>async</code> attribute loads the script asynchronously
+            without blocking HTML parsing.
+          </li>
+          <li>
+            The script executes as soon as it is downloaded, even if HTML
+            parsing is not complete.
+          </li>
+        </ul>
+        <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Script with Async&lt;/title&gt;
+            &lt;script src="script.js" async&gt;&lt;/script&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Hello, JavaScript!&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+      </li>
+      <li>
+        <strong>Use the <code>defer</code> attribute:</strong>
+        <ul>
+          <li>
+            The <code>defer</code> attribute loads the script asynchronously but
+            delays execution until HTML parsing is complete.
+          </li>
+          <li>
+            Scripts with <code>defer</code> execute in the order they appear in
+            the document.
+          </li>
+        </ul>
+        <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Script with Defer&lt;/title&gt;
+            &lt;script src="script.js" defer&gt;&lt;/script&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Hello, JavaScript!&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+      </li>
+      <li>
+        <strong>Understand the differences:</strong>
+        <ul>
+          <li>
+            <strong>Script in <code>&lt;head&gt;</code>:</strong> Blocks HTML
+            parsing until the script is loaded and executed.
+          </li>
+          <li>
+            <strong>Script at end of <code>&lt;body&gt;</code>:</strong> Ensures
+            HTML is parsed first, improving performance.
+          </li>
+          <li>
+            <strong><code>async</code>:</strong> Loads and executes the script
+            asynchronously, without blocking HTML parsing.
+          </li>
+          <li>
+            <strong><code>defer</code>:</strong> Loads the script asynchronously
+            but executes it only after HTML parsing is complete.
+          </li>
+        </ul>
+      </li>
+    </ol>
+
+    <h3>Steps to Test:</h3>
+    <ol>
+      <li>
+        Create an HTML file for each method (e.g., <code>head.html</code>,
+        <code>body-end.html</code>, <code>async.html</code>,
+        <code>defer.html</code>).
+      </li>
+      <li>Add the corresponding script loading method to each file.</li>
+      <li>
+        Open each file in a browser and observe the behavior in the console.
+      </li>
+      <li>
+        Compare the loading and execution times using the browser's DevTools
+        (Network tab).
+      </li>
+    </ol>
+  </body>
+</html>
