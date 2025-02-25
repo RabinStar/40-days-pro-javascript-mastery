@@ -37,3 +37,7 @@
 ### ✅ Task 4: Take Notes and Submit
 1. Hope you have captured a good notes of your learning.
 2. On the Discord, you will find `40 Days of JavaScript`. Please post about your task completion(github repo, screenshots, all) in the `task-assignments` channel.
+
+## 📅 Day-01: Introduction to JavaScript
+[🔗 View Day-01 Content](https://github.com/username/40-days-pro-javascript-mastery/tree/main/Day-01)
+
