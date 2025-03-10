@@ -1,4 +1,4 @@
-# Day 03 - 40 Days of JavaScript
+# Day 03: - Operands, Operators, Expressions
 
 ## **🎯 Goal of This Lesson**
 
