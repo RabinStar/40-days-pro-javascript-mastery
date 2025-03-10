@@ -72,7 +72,7 @@ A tricky one for you
 - [ ] Print it on the console.
 
 ## 📅 Day-03: Operators & Expressions
-[🔗 View Day-01 Content](https://github.com/RabinStar/40-days-pro-javascript-mastery/tree/main/Day-03)
+[🔗 View Day-03 Content](https://github.com/RabinStar/40-days-pro-javascript-mastery/tree/main/Day-03)
 
 ## 🫶 Get more information and Support My Trainer
 - Please SUBSCRIBE to [tapaScript YouTube Channel](https://youtube.com/tapasadhikary) if not done already. A Big Thank You!
