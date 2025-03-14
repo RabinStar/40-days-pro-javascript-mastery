@@ -13,7 +13,7 @@
 - Please find the task assignments in the [Task File](./task.md).
 
 ## 📅 Day-04: Conditional Statements
-[🔗 View Day-01 Content](https://github.com/RabinStar/40-days-pro-javascript-mastery/tree/main/Day-04)
+[🔗 View Day-04 Content](https://github.com/RabinStar/40-days-pro-javascript-mastery/tree/main/Day-04)
 
 ## 🫶 Get more information and Support My Trainer
 - Please SUBSCRIBE to [tapaScript YouTube Channel](https://youtube.com/tapasadhikary) if not done already.
