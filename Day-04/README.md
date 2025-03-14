@@ -10,7 +10,7 @@
 
 
 ## **👩‍💻 🧑‍💻 Assignment Tasks**
-- Please find the task assignments in the [Task File](./task.md).
+- Please find the task assignments in the [Task File](Day-04/Tasks/tasks.md).
 
 ## 📅 Day-04: Conditional Statements
 [🔗 View Day-04 Content](https://github.com/RabinStar/40-days-pro-javascript-mastery/tree/main/Day-04)
